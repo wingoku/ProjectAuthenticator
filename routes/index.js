@@ -12,6 +12,8 @@ router.get('/authenticate/:appName', cors(), function(req, res, next) {
   if(req.params.appName === "PrinterApp") {
     res.json({'result':true});
   }
+  else
+    res.json({'result':false});
 });
 
 module.exports = router;
